@@ -1,0 +1,236 @@
+---
+layout: page
+title: resume
+---
+{% assign profile = site.data.profile %}
+{% assign objective = site.data.objective %}
+{% assign experience = site.data.experience %}
+{% assign skills = site.data.skills %}
+{% assign certifications = site.data.certifications %}
+{% assign education = site.data.education %}
+{% assign volunteering = site.data.volunteering %}
+{% assign references = site.data.references %}
+{% assign interests = site.data.interests %}
+
+<article class="resume">
+
+<section class="content-section profile">
+
+    <div class="profile-name">{{ profile.name }}</div>
+    {% if profile.title %}<div class="profile-title"><p>{{ profile.title }}</p></div>{% endif %}
+    <div class="profile-info">
+        {% if profile.address %}<p>{{ profile.address.street }}, {{ profile.address.city }}, 
+            {{ profile.address.state }} {{ profile.address.zip }}</p>{% endif %}
+        <ul class="list-pipe">
+            {% if profile.email %}<li>{{ profile.email }}</li>{% endif %}
+            {% if profile.phone %}<li>{{ profile.phone }}</li>{% endif %}
+            {% if profile.personal_site %}<li>{{ profile.personal_site }}</li>{% endif %}
+        </ul>
+    </div>
+
+</section>
+
+{% if objective %}
+<section class="content-section objective">
+    <article class="objective-section">
+
+        <section class="content-section-title objective-section-title">
+            <div>{{ objective.section-title }}</div>
+        </section>
+
+        <section class="content-section-content objective-section-content">
+            <p>{{ objective.content }}</p>
+        </section>
+
+    </article>
+</section>
+{% endif %}
+
+{% if experience %}
+<section class="content-section experience">
+    <article class="experience-section">
+
+        <section class="content-section-title experience-section-title">
+            <div>{{ experience.section-title }}</div>
+        </section>
+        
+        <section class="experience-section-content">
+            <article class="css-grid">
+            {% for experience in experience.content %}
+                <section class="content-section-content experience-section-content-details">
+                    <p class="experience-section-content-details-company">{{ experience.company }}</p>
+                    <p class="experience-section-content-details-location">{{ experience.location }}</p>
+                    <p class="experience-section-content-details-title">{{ experience.title }}</p>
+                    <p class="experience-section-content-details-dates">{{ experience.dates }}</p>
+                    <p class="experience-section-content-details-description">{{ experience.description }}</p>
+                </section>
+            {% endfor %}
+            </article>
+        </section>
+
+    </article>
+</section>
+{% endif %}
+
+{% if skills %}
+<section class="content-section skills">
+    <article class="skills-section">
+
+        <section class="content-section-title skills-section-title">
+            <div>{{ skills.section-title }}</div>
+        </section>
+        
+        <section class="skills-section-content">
+            <article class="css-grid">
+            {% for skills in skills.content %}
+                <section class="content-section-content skills-section-content-details">
+                    <p>
+                        <a class="skills-section-content-details-category">{{ skills.category }}</a>
+                        
+                        {% if skills.items %} | 
+                            <a class="skills-section-content-details-items">{{ skills.items }}</a>
+                        {% endif %}
+                    </p>
+                </section>
+            {% endfor %}
+            </article>
+        </section>
+
+    </article>
+</section>
+{% endif %}
+
+{% if certifications %}
+<section class="content-section certifications">
+    <article class="certifications-section">
+
+        <section class="content-section-title certifications-section-title">
+            <div>{{ certifications.section-title }}</div>
+        </section>
+        
+        <section class="certifications-section-content">
+            <article class="css-grid">
+            {% for certifications in certifications.content %}
+                <section class="content-section-content certifications-section-content-details">
+                    <p class="certifications-section-content-details-certification">{{ certifications.certification }}</p>
+                    <p class="certifications-section-content-details-date-obtained">{{ certifications.date-obtained }}</p>
+                </section>
+            {% endfor %}
+            </article>
+        </section>
+
+    </article>
+</section>
+{% endif %}
+
+{% if education %}
+<section class="content-section education">
+    <article class="education-section">
+
+        <section class="content-section-title education-section-title">
+            <div>{{ education.section-title }}</div>
+        </section>
+        
+        <section class="education-section-content">
+            <article class="css-grid">
+            {% for education in education.content %}
+                <section class="content-section-content education-section-content-details">
+                    <p class="education-section-content-details-school">{{ education.school }}</p>
+                    <p class="education-section-content-details-location">{{ education.location }}</p class="education-section-content-details-">
+                    <p class="education-section-content-details-degree-type">{{ education.degree-type }}</p class="education-section-content-details-">
+                    <p class="education-section-content-details-major"><b>Major:</b> {{ education.major }}</p class="education-section-content-details-">
+                    <p class="education-section-content-details-minor"><b>Minor:</b> {{ education.minor }}</p class="education-section-content-details-">
+                    <p class="education-section-content-details-dates">{{ education.dates }}</p class="education-section-content-details-">
+                </section>
+            {% endfor %}
+            </article>
+        </section>
+
+    </article>
+</section>
+{% endif %}
+
+{% if volunteering %}
+<section class="content-section volunteering">
+    <article class="volunteering-section">
+
+        <section class="content-section-title volunteering-section-title">
+            <div>{{ volunteering.section-title }}</div>
+        </section>
+        
+        <section class="volunteering-section-content">
+            <article class="css-grid">
+            {% for volunteering in volunteering.content %}
+                <section class="content-section-content volunteering-section-content-details">
+                    <p class="volunteering-section-content-details-company">{{ volunteering.company }}</p>
+                    <p class="volunteering-section-content-details-location">{{ volunteering.location }}</p>
+                    <p class="volunteering-section-content-details-title">{{ volunteering.title }}</p>
+                    <p class="volunteering-section-content-details-dates">{{ volunteering.dates }}</p>
+                    <p class="volunteering-section-content-details-description">{{ volunteering.description }}</p>
+                </section>
+            {% endfor %}
+            </article>
+        </section>
+
+    </article>
+</section>
+{% endif %}
+
+{% if interests %}
+<section class="content-section interests">
+    <article class="interests-section">
+
+        <section class="content-section-title interests-section-title">
+            <div>{{ interests.section-title }}</div>
+        </section>
+        
+        <section class="interests-section-content">
+            <article class="css-grid">
+            {% for interests in interests.content %}
+                <section class="content-section-content interests-section-content-details">
+                    <p>
+                        <a class="interests-section-content-details-category">{{ interests.category }}</a>
+
+                        {% if interests.items %} | 
+                        <a class="interests-section-content-details-items">{{ interests.items }}</a>
+                        {% endif %}
+                    </p>
+                </section>
+            {% endfor %}
+            </article>
+        </section>
+
+    </article>
+</section>
+{% endif %}
+
+{% if references %}
+<section class="content-section references">
+    <article class="references-section">
+
+        <section class="content-section-title references-section-title">
+            <div>{{ references.section-title }}</div>
+        </section>
+        
+        <section class="references-section-content">
+            <article class="css-grid">
+            {% for references in references.content %}
+                <section class="content-section-content references-section-content-details">
+                    {% if references.name %}<a class="references-section-content-details-name">{{ references.name }}</a>{% endif %}
+                    {% if references.company %}<a class="references-section-content-details-company">{{ references.company }}</a>{% endif %}
+                    {% if references.title %}<a class="references-section-content-details-title">{{ references.title }}</a>{% endif %}
+                    <a class="references-section-content-details-contact">{% if references.phone %} {{ references.phone }} {% endif %} {% if references.email %} {{ references.email }} {% endif %}</a>
+                    
+                </section>
+            {% endfor %}
+            </article>
+        </section>
+
+    </article>
+</section>
+{% endif %}
+
+</article>
+
+
+
