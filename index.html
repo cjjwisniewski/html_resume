@@ -29,6 +29,7 @@ title: resume
         </p>
         {% endif %}
         <ul class="list-pipe">
+            {% if profile.linkedin %}<li>{{ profile.linkedin }}</li>{% endif %}
             {% if profile.email %}<li>{{ profile.email }}</li>{% endif %}
             {% if profile.phone %}<li>{{ profile.phone }}</li>{% endif %}
             {% if profile.personal_site %}<li>{{ profile.personal_site }}</li>{% endif %}
