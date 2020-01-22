@@ -19,8 +19,15 @@ title: resume
     <div class="profile-name">{{ profile.name }}</div>
     {% if profile.title %}<div class="profile-title"><p>{{ profile.title }}</p></div>{% endif %}
     <div class="profile-info">
-        {% if profile.address %}<p>{{ profile.address.street }}, {{ profile.address.city }}, 
-            {{ profile.address.state }} {{ profile.address.zip }}</p>{% endif %}
+        {% if profile.address %}
+        <p>
+        {% if profile.address.street %}{{ profile.address.street }}{% endif %}
+        {% if profile.address.city %}, {{ profile.address.city }}{% endif %}
+        {% if profile.address.state %}, {{ profile.address.state }}{% endif %}
+        {% if profile.address.zip %} {{ profile.address.zip }}{% endif %}
+        {% if profile.address.country %}, {{ profile.address.country }}{% endif %}
+        </p>
+        {% endif %}
         <ul class="list-pipe">
             {% if profile.email %}<li>{{ profile.email }}</li>{% endif %}
             {% if profile.phone %}<li>{{ profile.phone }}</li>{% endif %}
