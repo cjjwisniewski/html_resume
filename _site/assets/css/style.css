@@ -59,7 +59,7 @@ p {
         padding: 1em 0em 1em 0em;
         display: grid;
         grid-gap: 5px;
-        grid-template-columns: 1fr 4fr;
+        grid-template-columns: 1fr 5fr;
         grid-template-areas:
         "profile profile"
         "objective objective"
@@ -69,7 +69,7 @@ p {
         "certifications certifications"
         "volunteering volunteering"
         "interests interests"
-        "references references";         
+        "references references";       
     }
 }
 
@@ -78,7 +78,7 @@ p {
 }
 .content-section-title {
     text-align: center;
-    font-weight: bold;
+    font-weight: 800;
     padding: 1em 1em 0em 1em;   
 }
 @media (min-width: 1200px), print {
@@ -89,7 +89,7 @@ p {
 }
 .content-section-content {
     text-align: justify;
-    padding: 1em 1em 0em 1em;   
+    padding: 1em 1em 0em 1em;
 }
 @media (min-width: 1200px), print {
     .content-section-content {
@@ -140,7 +140,7 @@ p {
 @media (min-width: 1200px), print {
     .objective-section {
         display: grid;
-        grid-template-columns:1fr 4fr;
+        grid-template-columns:1fr 5fr;
         grid-template-areas:
         "objective-section-title objective-section-content";
     }
@@ -172,7 +172,7 @@ p {
 @media (min-width: 1200px), print {
     .experience-section {
         display: grid;
-        grid-template-columns:1fr 4fr;
+        grid-template-columns:1fr 5fr;
         grid-template-areas:
         "experience-section-title experience-section-content";
     }
@@ -228,7 +228,7 @@ p {
 @media (min-width: 1200px), print {
     .skills-section {
         display: grid;
-        grid-template-columns:1fr 4fr;
+        grid-template-columns:1fr 5fr;
         grid-template-areas:
         "skills-section-title skills-section-content";
     }
@@ -273,7 +273,7 @@ p {
 @media (min-width: 1200px), print {
     .certifications-section {
         display: grid;
-        grid-template-columns:1fr 4fr;
+        grid-template-columns:1fr 5fr;
         grid-template-areas:
         "certifications-section-title certifications-section-content";
     }
@@ -321,7 +321,7 @@ p {
 @media (min-width: 1200px), print {
     .education-section {
         display: grid;
-        grid-template-columns:1fr 4fr;
+        grid-template-columns:1fr 5fr;
         grid-template-areas:
         "education-section-title education-section-content";
     }
@@ -379,7 +379,7 @@ p {
 @media (min-width: 1200px), print {
     .volunteering-section {
         display: grid;
-        grid-template-columns:1fr 4fr;
+        grid-template-columns:1fr 5fr;
         grid-template-areas:
         "volunteering-section-title volunteering-section-content";
     }
@@ -435,7 +435,7 @@ p {
 @media (min-width: 1200px), print {
     .interests-section {
         display: grid;
-        grid-template-columns:1fr 4fr;
+        grid-template-columns:1fr 5fr;
         grid-template-areas:
         "interests-section-title interests-section-content";
     }
@@ -480,7 +480,7 @@ p {
 @media (min-width: 1200px), print {
     .references-section {
         display: grid;
-        grid-template-columns:1fr 4fr;
+        grid-template-columns:1fr 5fr;
         grid-template-areas:
         "references-section-title references-section-content";
     }
@@ -527,5 +527,14 @@ p {
     }
     .resume {
         box-shadow: none;
+    }
+    div {
+        page-break-inside: avoid;
+    }
+    @page {
+        margin: 2em 0em 2em 0em;
+    }
+    @page:first {
+        margin: 0em 0em 2em 0em;
     }
 }
