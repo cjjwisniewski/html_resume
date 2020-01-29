@@ -185,11 +185,23 @@ p {
 }
 .experience-section-content-details{
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 4fr;
     grid-template-areas:
-    "experience-section-content-details-company experience-section-content-details-location"
-    "experience-section-content-details-title experience-section-content-details-dates"
-    "experience-section-content-details-description experience-section-content-details-description";
+    "experience-section-content-details-company"
+    "experience-section-content-details-location"
+    "experience-section-content-details-title"
+    "experience-section-content-details-dates"
+    "experience-section-content-details-description";
+}
+@media (min-width: 1200px), print {
+    .experience-section-content-details{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
+        "experience-section-content-details-company experience-section-content-details-location"
+        "experience-section-content-details-title experience-section-content-details-dates"
+        "experience-section-content-details-description experience-section-content-details-description";
+    }
 }
 .experience-section-content-details-company {
     grid-area: experience-section-content-details-company;
@@ -286,9 +298,18 @@ p {
 }
 .certifications-section-content-details {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr;
     grid-template-areas:
-    "certifications-section-content-details-certification certifications-section-content-details-date-obtained"
+    "certifications-section-content-details-certification"
+    "certifications-section-content-details-date-obtained";
+}
+@media (min-width: 1200px), print {
+    .certifications-section-content-details {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:
+        "certifications-section-content-details-certification certifications-section-content-details-date-obtained";
+    }
 }
 .certifications-section-content-details:not(:first-child){
     padding-top: 0em;
@@ -334,12 +355,24 @@ p {
 }
 .education-section-content-details {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 4fr;
     grid-template-areas:
-    "education-section-content-details-school education-section-content-details-location"
-    "education-section-content-details-degree-type education-section-content-details-dates"
-    "education-section-content-details-major education-section-content-details-minor"
-
+    "education-section-content-details-school"
+    "education-section-content-details-location"
+    "education-section-content-details-degree-type"
+    "education-section-content-details-dates"
+    "education-section-content-details-major"
+    "education-section-content-details-minor";
+}
+@media (min-width: 1200px), print {
+    .education-section-content-details {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
+        "education-section-content-details-school education-section-content-details-location"
+        "education-section-content-details-degree-type education-section-content-details-dates"
+        "education-section-content-details-major education-section-content-details-minor";
+    }
 }
 .education-section-content-details-school {
     grid-area: education-section-content-details-school;
@@ -392,11 +425,23 @@ p {
 }
 .volunteering-section-content-details{
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 4fr;
     grid-template-areas:
-    "volunteering-section-content-details-company volunteering-section-content-details-location"
-    "volunteering-section-content-details-title volunteering-section-content-details-dates"
-    "volunteering-section-content-details-description volunteering-section-content-details-description";
+    "volunteering-section-content-details-company"
+    "volunteering-section-content-details-location"
+    "volunteering-section-content-details-title"
+    "volunteering-section-content-details-dates"
+    "volunteering-section-content-details-description";
+}
+@media (min-width: 1200px), print {
+    .volunteering-section-content-details{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
+        "volunteering-section-content-details-company volunteering-section-content-details-location"
+        "volunteering-section-content-details-title volunteering-section-content-details-dates"
+        "volunteering-section-content-details-description volunteering-section-content-details-description";
+    }
 }
 .volunteering-section-content-details-company {
     grid-area: volunteering-section-content-details-company;
@@ -494,11 +539,21 @@ p {
 }
 .references-section-content-details {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 4fr;
     grid-template-areas:
-    "references-section-content-details-name references-section-content-details-company"
-    "references-section-content-details-contact references-section-content-details-title";
-
+    "references-section-content-details-name"
+    "references-section-content-details-company"
+    "references-section-content-details-contact"
+    "references-section-content-details-title";
+}
+@media (min-width: 1200px), print{
+    .references-section-content-details {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
+        "references-section-content-details-name references-section-content-details-company"
+        "references-section-content-details-contact references-section-content-details-title";
+    }
 }
 .references-section-content-details-name {
     grid-area: references-section-content-details-name;
