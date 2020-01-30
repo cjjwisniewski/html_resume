@@ -1,6 +1,8 @@
 section-title: Interests
 content:
   - category: Jellyfishing
-    items: President of the Bikini Bottom Jellyfishing Club
+    interests:
+     - item: President of the Bikini Bottom Jellyfishing Club
   - category: Karate
-    items: Black belt in Sponge-Fu
+    interests:
+     - item: Black belt in Sponge-Fu
