@@ -20,13 +20,13 @@ title: resume
     {% if profile.title %}<div class="profile-title"><p>{{ profile.title }}</p></div>{% endif %}
     <div class="profile-info">
         {% if profile.address %}
-        <p>
-        {% if profile.address.street %}{{ profile.address.street }}{% endif %}
-        {% if profile.address.city %}, {{ profile.address.city }}{% endif %}
-        {% if profile.address.state %}, {{ profile.address.state }}{% endif %}
-        {% if profile.address.zip %} {{ profile.address.zip }}{% endif %}
-        {% if profile.address.country %}, {{ profile.address.country }}{% endif %}
-        </p>
+        <a>
+            {% if profile.address.street %}{{ profile.address.street }}{% endif %}<!--
+            -->{% if profile.address.city %}, {{ profile.address.city }}{% endif %}<!--
+            -->{% if profile.address.state %}, {{ profile.address.state }}{% endif %}<!--
+            -->{% if profile.address.zip %} {{ profile.address.zip }}{% endif %}<!--
+            -->{% if profile.address.country %}, {{ profile.address.country }}{% endif %}
+        </a>
         {% endif %}
         <ul class="list-pipe">
             {% if profile.linkedin %}<li>{{ profile.linkedin }}</li>{% endif %}
