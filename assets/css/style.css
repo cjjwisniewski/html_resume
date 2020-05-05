@@ -12,14 +12,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-ul li {
-    display: inline;
-}
 p {
     margin: 0;
     padding: 0;
@@ -120,6 +112,14 @@ p {
     font-size: 0.9em;
     margin-top: 0.3em;
 }
+.profile ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.profile ul li {
+    display: inline;
+}
 
 .objective {
     grid-area: objective;
@@ -131,12 +131,6 @@ p {
     "objective-section-title"
     "objective-section-content";
 }
-.objective-section-title {
-    grid-area: objective-section-title;
-}
-.objective-section-content {
-    grid-area: objective-section-content;
-}
 @media (min-width: 1200px), print {
     .objective-section {
         display: grid;
@@ -144,14 +138,13 @@ p {
         grid-template-areas:
         "objective-section-title objective-section-content";
     }
-    .objective-section-title {
-        grid-area: objective-section-title;
-    }
-    .objective-section-content {
-        grid-area: objective-section-content;
-    }
 }
-
+.objective-section-title {
+    grid-area: objective-section-title;
+}
+.objective-section-content {
+    grid-area: objective-section-content;
+}
 
 .experience {
     grid-area: experience;
@@ -163,12 +156,6 @@ p {
     "experience-section-title"
     "experience-section-content";
 }
-.experience-section-title {
-    grid-area: experience-section-title;
-}
-.experience-section-content {
-    grid-area: experience-section-content;
-}
 @media (min-width: 1200px), print {
     .experience-section {
         display: grid;
@@ -176,12 +163,12 @@ p {
         grid-template-areas:
         "experience-section-title experience-section-content";
     }
-    .experience-section-title {
-        grid-area: experience-section-title;
-    }
-    .experience-section-content {
-        grid-area: experience-section-content;
-    }
+}
+.experience-section-title {
+    grid-area: experience-section-title;
+}
+.experience-section-content {
+    grid-area: experience-section-content;
 }
 .experience-section-content-details{
     display: grid;
@@ -191,7 +178,8 @@ p {
     "experience-section-content-details-location"
     "experience-section-content-details-title"
     "experience-section-content-details-dates"
-    "experience-section-content-details-description";
+    "experience-section-content-details-description"
+    "experience-section-content-details-description-bullets";
 }
 @media (min-width: 1200px), print {
     .experience-section-content-details{
@@ -200,7 +188,8 @@ p {
         grid-template-areas:
         "experience-section-content-details-company experience-section-content-details-location"
         "experience-section-content-details-title experience-section-content-details-dates"
-        "experience-section-content-details-description experience-section-content-details-description";
+        "experience-section-content-details-description experience-section-content-details-description"
+        "experience-section-content-details-description-bullets experience-section-content-details-description-bullets";
     }
 }
 .experience-section-content-details-company {
@@ -220,6 +209,12 @@ p {
     grid-area: experience-section-content-details-description;
     padding-top: 1em;
 }
+.experience-section-content-details-description-bullets {
+    grid-area: experience-section-content-details-description-bullets;
+}
+.experience-section-content-details-description-bullets ul {
+    margin: 0.5em 0em 0em 0em;
+}
 
 .skills {
     grid-area: skills;
@@ -231,12 +226,6 @@ p {
     "skills-section-title"
     "skills-section-content";
 }
-.skills-section-title {
-    grid-area: skills-section-title;
-}
-.skills-section-content {
-    grid-area: skills-section-content;
-}
 @media (min-width: 1200px), print {
     .skills-section {
         display: grid;
@@ -244,12 +233,12 @@ p {
         grid-template-areas:
         "skills-section-title skills-section-content";
     }
-    .skills-section-title {
-        grid-area: skills-section-title;
-    }
-    .skills-section-content {
-        grid-area: skills-section-content;
-    }
+}
+.skills-section-title {
+    grid-area: skills-section-title;
+}
+.skills-section-content {
+    grid-area: skills-section-content;
 }
 .skills-section-content-details{
     display: grid;
@@ -276,12 +265,6 @@ p {
     "certifications-section-title"
     "certifications-section-content";
 }
-.certifications-section-title {
-    grid-area: certifications-section-title;
-}
-.certifications-section-content {
-    grid-area: certifications-section-content;
-}
 @media (min-width: 1200px), print {
     .certifications-section {
         display: grid;
@@ -289,12 +272,12 @@ p {
         grid-template-areas:
         "certifications-section-title certifications-section-content";
     }
-    .certifications-section-title {
-        grid-area: certifications-section-title;
-    }
-    .certifications-section-content {
-        grid-area: certifications-section-content;
-    }
+}
+.certifications-section-title {
+    grid-area: certifications-section-title;
+}
+.certifications-section-content {
+    grid-area: certifications-section-content;
 }
 .certifications-section-content-details {
     display: grid;
@@ -333,12 +316,6 @@ p {
     "education-section-title"
     "education-section-content";
 }
-.education-section-title {
-    grid-area: education-section-title;
-}
-.education-section-content {
-    grid-area: education-section-content;
-}
 @media (min-width: 1200px), print {
     .education-section {
         display: grid;
@@ -346,12 +323,12 @@ p {
         grid-template-areas:
         "education-section-title education-section-content";
     }
-    .education-section-title {
-        grid-area: education-section-title;
-    }
-    .education-section-content {
-        grid-area: education-section-content;
-    }
+}
+.education-section-title {
+    grid-area: education-section-title;
+}
+.education-section-content {
+    grid-area: education-section-content;
 }
 .education-section-content-details {
     display: grid;
@@ -403,12 +380,6 @@ p {
     "volunteering-section-title"
     "volunteering-section-content";
 }
-.volunteering-section-title {
-    grid-area: volunteering-section-title;
-}
-.volunteering-section-content {
-    grid-area: volunteering-section-content;
-}
 @media (min-width: 1200px), print {
     .volunteering-section {
         display: grid;
@@ -416,12 +387,12 @@ p {
         grid-template-areas:
         "volunteering-section-title volunteering-section-content";
     }
-    .volunteering-section-title {
-        grid-area: volunteering-section-title;
-    }
-    .volunteering-section-content {
-        grid-area: volunteering-section-content;
-    }
+}
+.volunteering-section-title {
+    grid-area: volunteering-section-title;
+}
+.volunteering-section-content {
+    grid-area: volunteering-section-content;
 }
 .volunteering-section-content-details{
     display: grid;
@@ -471,12 +442,6 @@ p {
     "interests-section-title"
     "interests-section-content";
 }
-.interests-section-title {
-    grid-area: interests-section-title;
-}
-.interests-section-content {
-    grid-area: interests-section-content;
-}
 @media (min-width: 1200px), print {
     .interests-section {
         display: grid;
@@ -484,12 +449,12 @@ p {
         grid-template-areas:
         "interests-section-title interests-section-content";
     }
-    .interests-section-title {
-        grid-area: interests-section-title;
-    }
-    .interests-section-content {
-        grid-area: interests-section-content;
-    }
+}
+.interests-section-title {
+    grid-area: interests-section-title;
+}
+.interests-section-content {
+    grid-area: interests-section-content;
 }
 .interests-section-content-details{
     display: grid;
@@ -516,12 +481,6 @@ p {
     "references-section-title"
     "references-section-content";
 }
-.references-section-title {
-    grid-area: references-section-title;
-}
-.references-section-content {
-    grid-area: references-section-content;
-}
 @media (min-width: 1200px), print {
     .references-section {
         display: grid;
@@ -529,13 +488,12 @@ p {
         grid-template-areas:
         "references-section-title references-section-content";
     }
-    .references-section-title {
-        grid-area: references-section-title;
-    }
-    .references-section-content {
-        grid-area: references-section-content;
-        
-    }
+}
+.references-section-title {
+    grid-area: references-section-title;
+}
+.references-section-content {
+    grid-area: references-section-content;
 }
 .references-section-content-details {
     display: grid;
@@ -575,6 +533,14 @@ p {
 .footer a {
     text-decoration: none;
     color: #636363;
+}
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer ul li {
+    display: inline;
 }
 @media print {
     header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {

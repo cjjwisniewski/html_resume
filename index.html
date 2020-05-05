@@ -71,6 +71,15 @@ title: resume
                     <p class="experience-section-content-details-title">{{ experience.title }}</p>
                     <p class="experience-section-content-details-dates">{{ experience.dates }}</p>
                     <p class="experience-section-content-details-description">{{ experience.description }}</p>
+                    <a class="experience-section-content-details-description-bullets">
+                        {% if experience.description-bullets %}
+                        <ul>
+                            {% for bullets in experience.description-bullets %}
+                            <li>{{ bullets.bullet }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </a> 
                 </section>
             {% endfor %}
             </article>

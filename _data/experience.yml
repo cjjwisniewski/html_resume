@@ -8,14 +8,11 @@ content:
       Commodo viverra maecenas accumsan lacus. A arcu cursus vitae congue mauris. 
       Tristique risus nec feugiat in fermentum posuere. Risus pretium quam vulputate 
       dignissim suspendisse in est ante. Euismod quis viverra nibh cras pulvinar mattis 
-      nunc sed blandit. Proin nibh nisl condimentum id venenatis a. Massa vitae tortor 
-      condimentum lacinia quis vel. Tellus integer feugiat scelerisque varius morbi enim 
-      nunc faucibus a. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Urna id 
-      volutpat lacus laoreet non curabitur gravida. Tortor condimentum lacinia quis vel 
-      eros donec. Odio eu feugiat pretium nibh ipsum. Fermentum dui faucibus in ornare 
-      quam viverra orci sagittis eu. Tortor at auctor urna nunc id cursus metus. Egestas 
-      dui id ornare arcu odio ut sem nulla. Dictum fusce ut placerat orci nulla pellentesque. 
-      Rhoncus dolor purus non enim praesent elementum facilisis leo.
+      nunc sed blandit. Proin nibh nisl condimentum id venenatis a. 
+    description-bullets:
+      - bullet: Vivamus dictum cursus volutpat. Aenean suscipit volutpat fermentum. Aenean auctor sed elit ut accumsan. 
+      - bullet: In accumsan libero ornare tellus interdum, non efficitur tellus rhoncus.
+      - bullet: Vivamus ac enim tincidunt, rutrum velit maximus, lobortis dui. Nullam eu orci quis turpis pulvinar congue.
   - company: Fishers of Jelly
     location: Bikini Bottom, Under the Sea
     title: Freelance Jellyfish Bounty Hunter
@@ -24,8 +21,7 @@ content:
       Nisi porta lorem mollis aliquam ut porttitor leo a diam. Nibh cras pulvinar mattis 
       nunc sed blandit. Ut sem viverra aliquet eget sit. Sit amet venenatis urna cursus 
       eget nunc scelerisque viverra. Maecenas pharetra convallis posuere morbi leo urna 
-      molestie at elementum. In dictum non consectetur a erat nam at lectus. Et netus et 
-      malesuada fames ac turpis egestas. Nullam vehicula ipsum a arcu cursus. Libero justo 
-      laoreet sit amet cursus sit. Sed enim ut sem viverra aliquet eget. Amet nisl purus in 
-      mollis nunc sed id semper. Eget nulla facilisi etiam dignissim diam quis enim lobortis 
-      scelerisque.
+      molestie at elementum.
+    description-bullets:
+      - bullet: Nunc gravida pellentesque tellus, ullamcorper mollis felis. Suspendisse aliquet eget magna vitae sodales.
+      - bullet: Duis quam nibh, tincidunt mollis risus eu, lacinia egestas odio. Fusce maximus odio magna, et blandit nibh egestas nec.
