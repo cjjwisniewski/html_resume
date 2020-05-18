@@ -1,1 +1,18 @@
+#Configuration settings for the overall content of the page
+#To use FontAwesome icons, just put your FA .js link into the fontawesome_link value and set the sections 
+#you'd like to have enabled to true. You can either comment them out or set them to false/a null value to disable them.
 title: example.com
+
+fontawesome_link:
+fontawesome_enable_header: true
+fontawesome_enable_content: true
+
+enable_profile: true
+enable_objective: true
+enable_experience: true
+enable_skills: true
+enable_certifications: true
+enable_education: true
+enable_volunteering: true
+enable_interests: true
+enable_references: true

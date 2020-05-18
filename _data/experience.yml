@@ -3,7 +3,7 @@ content:
   - company: Krusty Krab
     location: Bikini Bottom, Under the Sea
     title: Executive Chef<br>Fry Cook
-    dates: June 2003 to Present<br>May 1999 to June 2003
+    dates: June 2003 to Present<br><i class="fas fa-calendar-alt fontawesome-icon"></i>May 1999 to June 2003
     description:
       Commodo viverra maecenas accumsan lacus. A arcu cursus vitae congue mauris. 
       Tristique risus nec feugiat in fermentum posuere. Risus pretium quam vulputate 

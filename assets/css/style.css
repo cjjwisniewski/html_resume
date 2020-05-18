@@ -23,6 +23,10 @@ p {
     content: "|";
     margin: 0em 0.25em 0em 0.5em;
 }
+.fontawesome-icon {
+    color: #000000;
+    margin-right: 0.5em;
+}
 
 .resume {
     background: #ffffff;
@@ -69,6 +73,7 @@ p {
     margin: 0em 1em 0em 1em;
 }
 .content-section-title {
+    color: #000000;
     text-align: center;
     font-weight: 800;
     padding: 1em 1em 0em 1em;   
