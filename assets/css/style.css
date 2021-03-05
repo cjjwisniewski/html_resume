@@ -39,6 +39,7 @@ p {
     "profile"
     "objective"
     "experience"
+    "internships"
     "skills"
     "certifications"
     "education"
@@ -60,6 +61,7 @@ p {
         "profile profile"
         "objective objective"
         "experience experience"
+        "internships internships"
         "skills skills"
         "education education"
         "certifications certifications"
@@ -218,6 +220,76 @@ p {
     grid-area: experience-section-content-details-description-bullets;
 }
 .experience-section-content-details-description-bullets ul {
+    margin: 0.5em 0em 0em 0em;
+}
+
+.internships {
+    grid-area: internships;
+}
+.internships-section {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-areas:
+    "internships-section-title"
+    "internships-section-content";
+}
+@media (min-width: 1200px), print {
+    .internships-section {
+        display: grid;
+        grid-template-columns:1fr 5fr;
+        grid-template-areas:
+        "internships-section-title internships-section-content";
+    }
+}
+.internships-section-title {
+    grid-area: internships-section-title;
+}
+.internships-section-content {
+    grid-area: internships-section-content;
+}
+.internships-section-content-details{
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-areas:
+    "internships-section-content-details-company"
+    "internships-section-content-details-location"
+    "internships-section-content-details-title"
+    "internships-section-content-details-dates"
+    "internships-section-content-details-description"
+    "internships-section-content-details-description-bullets";
+}
+@media (min-width: 1200px), print {
+    .internships-section-content-details{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
+        "internships-section-content-details-company internships-section-content-details-location"
+        "internships-section-content-details-title internships-section-content-details-dates"
+        "internships-section-content-details-description internships-section-content-details-description"
+        "internships-section-content-details-description-bullets internships-section-content-details-description-bullets";
+    }
+}
+.internships-section-content-details-company {
+    grid-area: internships-section-content-details-company;
+    font-weight: bold;
+}
+.internships-section-content-details-location {
+    grid-area: internships-section-content-details-location;
+}
+.internships-section-content-details-title {
+    grid-area: internships-section-content-details-title;
+}
+.internships-section-content-details-dates {
+    grid-area: internships-section-content-details-dates;
+}
+.internships-section-content-details-description {
+    grid-area: internships-section-content-details-description;
+    padding-top: 1em;
+}
+.internships-section-content-details-description-bullets {
+    grid-area: internships-section-content-details-description-bullets;
+}
+.internships-section-content-details-description-bullets ul {
     margin: 0.5em 0em 0em 0em;
 }
 
@@ -407,7 +479,8 @@ p {
     "volunteering-section-content-details-location"
     "volunteering-section-content-details-title"
     "volunteering-section-content-details-dates"
-    "volunteering-section-content-details-description";
+    "volunteering-section-content-details-description"
+    "internships-section-content-details-description-bullets";
 }
 @media (min-width: 1200px), print {
     .volunteering-section-content-details{
@@ -416,7 +489,8 @@ p {
         grid-template-areas:
         "volunteering-section-content-details-company volunteering-section-content-details-location"
         "volunteering-section-content-details-title volunteering-section-content-details-dates"
-        "volunteering-section-content-details-description volunteering-section-content-details-description";
+        "volunteering-section-content-details-description volunteering-section-content-details-description"
+        "internships-section-content-details-description-bullets internships-section-content-details-description-bullets";
     }
 }
 .volunteering-section-content-details-company {
@@ -435,6 +509,12 @@ p {
 .volunteering-section-content-details-description {
     grid-area: volunteering-section-content-details-description;
     padding-top: 1em;
+}
+.volunteering-section-content-details-description-bullets {
+    grid-area: internships-section-content-details-description-bullets;
+}
+.volunteering-section-content-details-description-bullets ul {
+    margin: 0.5em 0em 0em 0em;
 }
 
 .interests {

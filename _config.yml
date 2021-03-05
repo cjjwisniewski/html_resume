@@ -10,6 +10,7 @@ fontawesome_enable_content: true
 enable_profile: true
 enable_objective: true
 enable_experience: true
+enable_internships: true
 enable_skills: true
 enable_certifications: true
 enable_education: true

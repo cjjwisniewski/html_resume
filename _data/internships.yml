@@ -1,0 +1,15 @@
+section-title: Internships
+content:
+  - company: King Neptune's Castle
+    location: Bikini Bottom, Under the Sea
+    title: Kitchen Intern
+    dates: January 1999 to May 1999
+    description:
+      Commodo viverra maecenas accumsan lacus. A arcu cursus vitae congue mauris. 
+      Tristique risus nec feugiat in fermentum posuere. Risus pretium quam vulputate 
+      dignissim suspendisse in est ante. Euismod quis viverra nibh cras pulvinar mattis 
+      nunc sed blandit. Proin nibh nisl condimentum id venenatis a. 
+    description-bullets:
+      - bullet: Vivamus dictum cursus volutpat. Aenean suscipit volutpat fermentum. Aenean auctor sed elit ut accumsan. 
+      - bullet: In accumsan libero ornare tellus interdum, non efficitur tellus rhoncus.
+      - bullet: Vivamus ac enim tincidunt, rutrum velit maximus, lobortis dui. Nullam eu orci quis turpis pulvinar congue.

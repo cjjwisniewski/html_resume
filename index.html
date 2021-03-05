@@ -5,6 +5,7 @@ title: resume
 {% assign profile = site.data.profile %}
 {% assign objective = site.data.objective %}
 {% assign experience = site.data.experience %}
+{% assign internships = site.data.internships %}
 {% assign skills = site.data.skills %}
 {% assign certifications = site.data.certifications %}
 {% assign education = site.data.education %}
@@ -91,6 +92,42 @@ title: resume
     </article>
 </section>
 {% endif %}
+
+{% if internships and site.enable_internships %}
+<section class="content-section internships">
+    <article class="internships-section">
+
+        <section class="content-section-title internships-section-title">
+            <div>{{ internships.section-title }}</div>
+        </section>
+        
+        <section class="internships-section-content">
+            <article class="css-grid">
+            {% for internships in internships.content %}
+                <section class="content-section-content internships-section-content-details">
+                    <p class="internships-section-content-details-company">{{ internships.company }}</p>
+                    <p class="internships-section-content-details-location">{% if site.fontawesome_link and site.fontawesome_enable_content %}<i class="fas fa-map-marker-alt fontawesome-icon"></i>{% endif %}{{ internships.location }}</p>
+                    <p class="internships-section-content-details-title">{{ internships.title }}</p>
+                    <p class="internships-section-content-details-dates">{% if site.fontawesome_link and site.fontawesome_enable_content %}<i class="fas fa-calendar-alt fontawesome-icon"></i>{% endif %}{{ internships.dates }}</p>
+                    <p class="internships-section-content-details-description">{{ internships.description }}</p>
+                    <a class="internships-section-content-details-description-bullets">
+                        {% if internships.description-bullets %}
+                        <ul>
+                            {% for bullets in internships.description-bullets %}
+                            <li>{{ bullets.bullet }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </a> 
+                </section>
+            {% endfor %}
+            </article>
+        </section>
+
+    </article>
+</section>
+{% endif %}
+
 
 {% if skills and site.enable_skills %}
 <section class="content-section skills">
@@ -189,6 +226,15 @@ title: resume
                     <p class="volunteering-section-content-details-title">{{ volunteering.title }}</p>
                     <p class="volunteering-section-content-details-dates">{% if site.fontawesome_link and site.fontawesome_enable_content %}<i class="fas fa-calendar-alt fontawesome-icon"></i>{% endif %}{{ volunteering.dates }}</p>
                     <p class="volunteering-section-content-details-description">{{ volunteering.description }}</p>
+                    <a class="volunteering-section-content-details-description-bullets">
+                        {% if volunteering.description-bullets %}
+                        <ul>
+                            {% for bullets in volunteering.description-bullets %}
+                            <li>{{ bullets.bullet }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </a>
                 </section>
             {% endfor %}
             </article>
