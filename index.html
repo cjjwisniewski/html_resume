@@ -21,7 +21,7 @@ title: resume
     <div class="profile-name">{{ profile.name }}</div>
     {% if profile.title %}<div class="profile-title"><p>{{ profile.title }}</p></div>{% endif %}
     <div class="profile-info">
-        {% if profile.address %}
+        {% if profile.address.city %}
         {% if site.fontawesome_link and site.fontawesome_enable_header %}<i class="fas fa-map-marker-alt fontawesome-icon"></i>{% endif %}
         <a>
             {% if profile.address.street %}{{ profile.address.street }}{% endif %}<!--
