@@ -6,29 +6,29 @@ body {
     font-size: 0.8em;    
     color: #000000;
 }
-.wrapper {
+#resume .wrapper {
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-p {
+#resume p {
     margin: 0;
     padding: 0;
 }
-.header {
+#resume .header {
     margin: 1em;
 }
-.list-pipe > li:not(:last-child)::after {
+#resume .list-pipe > li:not(:last-child)::after {
     content: "|";
     margin: 0em 0.25em 0em 0.5em;
 }
-.fontawesome-icon {
+#resume .fontawesome-icon {
     color: #000000;
     margin-right: 0.5em;
 }
 
-.resume {
+#resume .resume {
     background: #ffffff;
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
     padding: 1em 0em 1em 0em;
@@ -39,7 +39,6 @@ p {
     "profile"
     "objective"
     "experience"
-    "internships"
     "skills"
     "certifications"
     "education"
@@ -49,19 +48,18 @@ p {
     
 }
 @media (min-width: 1200px), print {
-    .resume {
+    #resume .resume {
         width: 210mm;
         background: #ffffff;
         box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
         padding: 1em 0em 1em 0em;
         display: grid;
         grid-gap: 5px;
-        grid-template-columns: 1fr 5fr;
+        grid-template-columns: 1fr 6fr;
         grid-template-areas:
         "profile profile"
         "objective objective"
         "experience experience"
-        "internships internships"
         "skills skills"
         "education education"
         "certifications certifications"
@@ -71,67 +69,67 @@ p {
     }
 }
 
-.content-section {
+#resume .content-section {
     margin: 0em 1em 0em 1em;
 }
-.content-section-title {
+#resume .content-section-title {
     color: #000000;
     text-align: center;
     font-weight: 800;
     padding: 1em 1em 0em 1em;   
 }
 @media (min-width: 1200px), print {
-    .content-section-title {
+    #resume .content-section-title {
         text-align: right;
         padding: 1em 1em 0em 1em;   
     }
 }
-.content-section-content {
+#resume .content-section-content {
     text-align: justify;
     padding: 1em 1em 0em 1em;
 }
 @media (min-width: 1200px), print {
-    .content-section-content {
+    #resume .content-section-content {
         text-align: justify;
         padding: 1em 1em 0em 1em;   
     }
 }
-.css-grid {
+#resume .css-grid {
     display: grid;
     grid-gap: 5px;
 }
-.css-inline-block {
+#resume .css-inline-block {
     display: inline-block;
 }
 
-.profile {
+#resume .profile {
     text-align: center;
     grid-area: profile;
 }
-.profile-name {
+#resume .profile-name {
     font-weight: bold;
     font-size: 1.5em;
 }
-.profile-title {
+#resume .profile-title {
     font-size: 1em;
 }
-.profile-info {
+#resume .profile-info {
     font-size: 0.9em;
     margin-top: 0.3em;
 }
-.profile ul {
+#resume .profile ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.profile ul li {
+#resume .profile ul li {
     display: inline;
 }
 
-.objective {
+#resume .objective {
     grid-area: objective;
 }
-.objective-section {
+#resume .objective-section {
     display: grid;
     grid-template-columns:1fr;
     grid-template-areas:
@@ -139,24 +137,24 @@ p {
     "objective-section-content";
 }
 @media (min-width: 1200px), print {
-    .objective-section {
+    #resume .objective-section {
         display: grid;
-        grid-template-columns:1fr 5fr;
+        grid-template-columns:1fr 6fr;
         grid-template-areas:
         "objective-section-title objective-section-content";
     }
 }
-.objective-section-title {
+#resume .objective-section-title {
     grid-area: objective-section-title;
 }
-.objective-section-content {
+#resume .objective-section-content {
     grid-area: objective-section-content;
 }
 
-.experience {
+#resume .experience {
     grid-area: experience;
 }
-.experience-section {
+#resume .experience-section {
     display: grid;
     grid-template-columns:1fr;
     grid-template-areas:
@@ -164,20 +162,20 @@ p {
     "experience-section-content";
 }
 @media (min-width: 1200px), print {
-    .experience-section {
+    #resume .experience-section {
         display: grid;
-        grid-template-columns:1fr 5fr;
+        grid-template-columns:1fr 6fr;
         grid-template-areas:
         "experience-section-title experience-section-content";
     }
 }
-.experience-section-title {
+#resume .experience-section-title {
     grid-area: experience-section-title;
 }
-.experience-section-content {
+#resume .experience-section-content {
     grid-area: experience-section-content;
 }
-.experience-section-content-details{
+#resume .experience-section-content-details{
     display: grid;
     grid-template-columns: 4fr;
     grid-template-areas:
@@ -189,7 +187,7 @@ p {
     "experience-section-content-details-description-bullets";
 }
 @media (min-width: 1200px), print {
-    .experience-section-content-details{
+    #resume .experience-section-content-details{
         display: grid;
         grid-template-columns: 2fr 2fr;
         grid-template-areas:
@@ -199,104 +197,34 @@ p {
         "experience-section-content-details-description-bullets experience-section-content-details-description-bullets";
     }
 }
-.experience-section-content-details-company {
+#resume .experience-section-content-details-company {
     grid-area: experience-section-content-details-company;
     font-weight: bold;
 }
-.experience-section-content-details-location {
+#resume .experience-section-content-details-location {
     grid-area: experience-section-content-details-location;
 }
-.experience-section-content-details-title {
+#resume .experience-section-content-details-title {
     grid-area: experience-section-content-details-title;
 }
-.experience-section-content-details-dates {
+#resume .experience-section-content-details-dates {
     grid-area: experience-section-content-details-dates;
 }
-.experience-section-content-details-description {
+#resume .experience-section-content-details-description {
     grid-area: experience-section-content-details-description;
     padding-top: 1em;
 }
-.experience-section-content-details-description-bullets {
+#resume .experience-section-content-details-description-bullets {
     grid-area: experience-section-content-details-description-bullets;
 }
-.experience-section-content-details-description-bullets ul {
+#resume .experience-section-content-details-description-bullets ul {
     margin: 0.5em 0em 0em 0em;
 }
 
-.internships {
-    grid-area: internships;
-}
-.internships-section {
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-areas:
-    "internships-section-title"
-    "internships-section-content";
-}
-@media (min-width: 1200px), print {
-    .internships-section {
-        display: grid;
-        grid-template-columns:1fr 5fr;
-        grid-template-areas:
-        "internships-section-title internships-section-content";
-    }
-}
-.internships-section-title {
-    grid-area: internships-section-title;
-}
-.internships-section-content {
-    grid-area: internships-section-content;
-}
-.internships-section-content-details{
-    display: grid;
-    grid-template-columns: 4fr;
-    grid-template-areas:
-    "internships-section-content-details-company"
-    "internships-section-content-details-location"
-    "internships-section-content-details-title"
-    "internships-section-content-details-dates"
-    "internships-section-content-details-description"
-    "internships-section-content-details-description-bullets";
-}
-@media (min-width: 1200px), print {
-    .internships-section-content-details{
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-template-areas:
-        "internships-section-content-details-company internships-section-content-details-location"
-        "internships-section-content-details-title internships-section-content-details-dates"
-        "internships-section-content-details-description internships-section-content-details-description"
-        "internships-section-content-details-description-bullets internships-section-content-details-description-bullets";
-    }
-}
-.internships-section-content-details-company {
-    grid-area: internships-section-content-details-company;
-    font-weight: bold;
-}
-.internships-section-content-details-location {
-    grid-area: internships-section-content-details-location;
-}
-.internships-section-content-details-title {
-    grid-area: internships-section-content-details-title;
-}
-.internships-section-content-details-dates {
-    grid-area: internships-section-content-details-dates;
-}
-.internships-section-content-details-description {
-    grid-area: internships-section-content-details-description;
-    padding-top: 1em;
-}
-.internships-section-content-details-description-bullets {
-    grid-area: internships-section-content-details-description-bullets;
-}
-.internships-section-content-details-description-bullets ul {
-    margin: 0.5em 0em 0em 0em;
-}
-
-.skills {
+#resume .skills {
     grid-area: skills;
 }
-.skills-section {
+#resume .skills-section {
     display: grid;
     grid-template-columns:1fr;
     grid-template-areas:
@@ -304,38 +232,38 @@ p {
     "skills-section-content";
 }
 @media (min-width: 1200px), print {
-    .skills-section {
+    #resume .skills-section {
         display: grid;
-        grid-template-columns:1fr 5fr;
+        grid-template-columns:1fr 6fr;
         grid-template-areas:
         "skills-section-title skills-section-content";
     }
 }
-.skills-section-title {
+#resume .skills-section-title {
     grid-area: skills-section-title;
 }
-.skills-section-content {
+#resume .skills-section-content {
     grid-area: skills-section-content;
 }
-.skills-section-content-details{
+#resume .skills-section-content-details{
     display: grid;
     grid-template-columns: 4fr;
 }
-.skills-section-content-details:not(:first-child){
+#resume .skills-section-content-details:not(:first-child){
     padding-top: 0em;
 }
-.skills-section-content-details-category {
+#resume .skills-section-content-details-category {
     grid-area: skills-section-content-details-category;
     font-weight: bold;
 }
-.skills-section-content-details-items {
+#resume .skills-section-content-details-items {
     grid-area: skills-section-content-details-items;
 }
 
-.certifications {
+#resume .certifications {
     grid-area: certifications;
 }
-.certifications-section {
+#resume .certifications-section {
     display: grid;
     grid-template-columns:1fr;
     grid-template-areas:
@@ -343,20 +271,20 @@ p {
     "certifications-section-content";
 }
 @media (min-width: 1200px), print {
-    .certifications-section {
+    #resume .certifications-section {
         display: grid;
-        grid-template-columns:1fr 5fr;
+        grid-template-columns:1fr 6fr;
         grid-template-areas:
         "certifications-section-title certifications-section-content";
     }
 }
-.certifications-section-title {
+#resume .certifications-section-title {
     grid-area: certifications-section-title;
 }
-.certifications-section-content {
+#resume .certifications-section-content {
     grid-area: certifications-section-content;
 }
-.certifications-section-content-details {
+#resume .certifications-section-content-details {
     display: grid;
     grid-template-columns: 4fr;
     grid-template-areas:
@@ -364,29 +292,29 @@ p {
     "certifications-section-content-details-date-obtained";
 }
 @media (min-width: 1200px), print {
-    .certifications-section-content-details {
+    #resume .certifications-section-content-details {
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-template-areas:
         "certifications-section-content-details-certification certifications-section-content-details-date-obtained";
     }
 }
-.certifications-section-content-details:not(:first-child){
+#resume .certifications-section-content-details:not(:first-child){
     padding-top: 0em;
 }
-.certifications-section-content-details-certification {
+#resume .certifications-section-content-details-certification {
     grid-area: certifications-section-content-details-certification;
     font-weight: bold;
 }
-.certifications-section-content-details-date-obtained {
+#resume .certifications-section-content-details-date-obtained {
     grid-area: certifications-section-content-details-date-obtained;
 }
 
 
-.education {
+#resume .education {
     grid-area: education;
 }
-.education-section {
+#resume .education-section {
     display: grid;
     grid-template-columns:1fr;
     grid-template-areas:
@@ -394,20 +322,20 @@ p {
     "education-section-content";
 }
 @media (min-width: 1200px), print {
-    .education-section {
+    #resume .education-section {
         display: grid;
-        grid-template-columns:1fr 5fr;
+        grid-template-columns:1fr 6fr;
         grid-template-areas:
         "education-section-title education-section-content";
     }
 }
-.education-section-title {
+#resume .education-section-title {
     grid-area: education-section-title;
 }
-.education-section-content {
+#resume .education-section-content {
     grid-area: education-section-content;
 }
-.education-section-content-details {
+#resume .education-section-content-details {
     display: grid;
     grid-template-columns: 4fr;
     grid-template-areas:
@@ -419,7 +347,7 @@ p {
     "education-section-content-details-minor";
 }
 @media (min-width: 1200px), print {
-    .education-section-content-details {
+    #resume .education-section-content-details {
         display: grid;
         grid-template-columns: 2fr 2fr;
         grid-template-areas:
@@ -428,29 +356,29 @@ p {
         "education-section-content-details-major education-section-content-details-minor";
     }
 }
-.education-section-content-details-school {
+#resume .education-section-content-details-school {
     grid-area: education-section-content-details-school;
     font-weight: bold;
 }
-.education-section-content-details-location {
+#resume .education-section-content-details-location {
     grid-area: education-section-content-details-location;
 }
-.education-section-content-details-degree-type {
+#resume .education-section-content-details-degree-type {
     grid-area: education-section-content-details-degree-type;
 }
-.education-section-content-details-major {
+#resume .education-section-content-details-major {
     grid-area: education-section-content-details-major;
 }
-.education-section-content-details-minor {
+#resume .education-section-content-details-minor {
     grid-area: education-section-content-details-minor;
 }
-.education-section-content-details-dates {
+#resume .education-section-content-details-dates {
     grid-area: education-section-content-details-dates;
 }
-.volunteering {
+#resume .volunteering {
     grid-area: volunteering;
 }
-.volunteering-section {
+#resume .volunteering-section {
     display: grid;
     grid-template-columns:1fr;
     grid-template-areas:
@@ -458,20 +386,20 @@ p {
     "volunteering-section-content";
 }
 @media (min-width: 1200px), print {
-    .volunteering-section {
+    #resume .volunteering-section {
         display: grid;
-        grid-template-columns:1fr 5fr;
+        grid-template-columns:1fr 6fr;
         grid-template-areas:
         "volunteering-section-title volunteering-section-content";
     }
 }
-.volunteering-section-title {
+#resume .volunteering-section-title {
     grid-area: volunteering-section-title;
 }
-.volunteering-section-content {
+#resume .volunteering-section-content {
     grid-area: volunteering-section-content;
 }
-.volunteering-section-content-details{
+#resume .volunteering-section-content-details{
     display: grid;
     grid-template-columns: 4fr;
     grid-template-areas:
@@ -479,48 +407,40 @@ p {
     "volunteering-section-content-details-location"
     "volunteering-section-content-details-title"
     "volunteering-section-content-details-dates"
-    "volunteering-section-content-details-description"
-    "internships-section-content-details-description-bullets";
+    "volunteering-section-content-details-description";
 }
 @media (min-width: 1200px), print {
-    .volunteering-section-content-details{
+    #resume .volunteering-section-content-details{
         display: grid;
         grid-template-columns: 2fr 2fr;
         grid-template-areas:
         "volunteering-section-content-details-company volunteering-section-content-details-location"
         "volunteering-section-content-details-title volunteering-section-content-details-dates"
-        "volunteering-section-content-details-description volunteering-section-content-details-description"
-        "internships-section-content-details-description-bullets internships-section-content-details-description-bullets";
+        "volunteering-section-content-details-description volunteering-section-content-details-description";
     }
 }
-.volunteering-section-content-details-company {
+#resume .volunteering-section-content-details-company {
     grid-area: volunteering-section-content-details-company;
     font-weight: bold;
 }
-.volunteering-section-content-details-location {
+#resume .volunteering-section-content-details-location {
     grid-area: volunteering-section-content-details-location;
 }
-.volunteering-section-content-details-title {
+#resume .volunteering-section-content-details-title {
     grid-area: volunteering-section-content-details-title;
 }
-.volunteering-section-content-details-dates {
+#resume .volunteering-section-content-details-dates {
     grid-area: volunteering-section-content-details-dates;
 }
-.volunteering-section-content-details-description {
+#resume .volunteering-section-content-details-description {
     grid-area: volunteering-section-content-details-description;
     padding-top: 1em;
 }
-.volunteering-section-content-details-description-bullets {
-    grid-area: internships-section-content-details-description-bullets;
-}
-.volunteering-section-content-details-description-bullets ul {
-    margin: 0.5em 0em 0em 0em;
-}
 
-.interests {
+#resume .interests {
     grid-area: interests;
 }
-.interests-section {
+#resume .interests-section {
     display: grid;
     grid-template-columns:1fr;
     grid-template-areas:
@@ -528,38 +448,38 @@ p {
     "interests-section-content";
 }
 @media (min-width: 1200px), print {
-    .interests-section {
+    #resume .interests-section {
         display: grid;
-        grid-template-columns:1fr 5fr;
+        grid-template-columns:1fr 6fr;
         grid-template-areas:
         "interests-section-title interests-section-content";
     }
 }
-.interests-section-title {
+#resume .interests-section-title {
     grid-area: interests-section-title;
 }
-.interests-section-content {
+#resume .interests-section-content {
     grid-area: interests-section-content;
 }
-.interests-section-content-details{
+#resume .interests-section-content-details{
     display: grid;
     grid-template-columns: 4fr;
 }
-.interests-section-content-details:not(:first-child){
+#resume .interests-section-content-details:not(:first-child){
     padding-top: 0em;
 }
-.interests-section-content-details-category {
+#resume .interests-section-content-details-category {
     grid-area: interests-section-content-details-category;
     font-weight: bold;
 }
-.interests-section-content-details-items {
+#resume .interests-section-content-details-items {
     grid-area: interests-section-content-details-items;
 }
 
-.references {
+#resume .references {
     grid-area: references;
 }
-.references-section {
+#resume .references-section {
     display: grid;
     grid-template-columns:1fr;
     grid-template-areas:
@@ -567,20 +487,20 @@ p {
     "references-section-content";
 }
 @media (min-width: 1200px), print {
-    .references-section {
+    #resume .references-section {
         display: grid;
-        grid-template-columns:1fr 5fr;
+        grid-template-columns:1fr 6fr;
         grid-template-areas:
         "references-section-title references-section-content";
     }
 }
-.references-section-title {
+#resume .references-section-title {
     grid-area: references-section-title;
 }
-.references-section-content {
+#resume .references-section-content {
     grid-area: references-section-content;
 }
-.references-section-content-details {
+#resume .references-section-content-details {
     display: grid;
     grid-template-columns: 4fr;
     grid-template-areas:
@@ -590,7 +510,7 @@ p {
     "references-section-content-details-title";
 }
 @media (min-width: 1200px), print{
-    .references-section-content-details {
+    #resume .references-section-content-details {
         display: grid;
         grid-template-columns: 2fr 2fr;
         grid-template-areas:
@@ -598,43 +518,43 @@ p {
         "references-section-content-details-contact references-section-content-details-title";
     }
 }
-.references-section-content-details-name {
+#resume .references-section-content-details-name {
     grid-area: references-section-content-details-name;
     font-weight: bold;
 }
-.references-section-content-details-company {
+#resume .references-section-content-details-company {
     grid-area: references-section-content-details-company;
 }
-.references-section-content-details-title {
+#resume .references-section-content-details-title {
     grid-area: references-section-content-details-title;
 }
-.references-section-content-details-contact {
+#resume .references-section-content-details-contact {
     grid-area: references-section-content-details-contact;
 }
 
-.footer {
+#resume .footer {
     margin: 1em;
 }
-.footer a {
+#resume .footer a {
     text-decoration: none;
     color: #636363;
 }
-.footer ul {
+#resume .footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.footer ul li {
+#resume .footer ul li {
     display: inline;
 }
 @media print {
-    header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
+    #resume header, #resume footer, #resume aside, #resume nav, #resume form, #resume iframe, #resume .menu, #resume .hero, #resume .adslot {
         display: none;
     }
-    .resume {
+    #resume .resume {
         box-shadow: none;
     }
-    div {
+    #resume div {
         page-break-inside: avoid;
     }
     @page {
